@@ -18,14 +18,13 @@ import {
 
 const ColorsList = () => {
    const dispatch = useDispatch<AppDispatch>();
+
    const [name, setName] = useState("");
    const [hex, setHex] = useState("");
-
+   const [removingId, setRemovingId] = useState("");
    const [search, setSearch] = useState("");
 
    const { colors } = useSelector((state: RootState) => state.colors);
-
-   const [removingId, setRemovingId] = useState("");
 
    const handleRemove = (id: string) => {
       setRemovingId(id);
@@ -35,10 +34,6 @@ const ColorsList = () => {
          setRemovingId("");
       }, 300);
    };
-
-   useEffect(() => {
-      dispatch(fetchColors());
-   }, [dispatch]);
 
    const onAddColor = async () => {
       const isValid = await validateColor(name, hex);
@@ -51,6 +46,10 @@ const ColorsList = () => {
    };
 
    const filteredColors = colors.filter((color) => color.name.toLowerCase().includes(search.toLowerCase()));
+
+   useEffect(() => {
+      dispatch(fetchColors());
+   }, [dispatch]);
 
    return (
       <>
