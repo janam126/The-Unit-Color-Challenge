@@ -1,154 +1,189 @@
 {
   "colors": [
     {
-      "id": "1",
-      "name": "Red",
-      "hex": "#FF0000"
-    },
-    {
-      "id": "2",
-      "name": "Green",
-      "hex": "#00FF00"
-    },
-    {
-      "id": "3",
-      "name": "Blue",
-      "hex": "#0000FF"
-    },
-    {
-      "id": "4",
-      "name": "Yellow",
-      "hex": "#FFFF00"
-    },
-    {
-      "id": "5",
-      "name": "Cyan",
-      "hex": "#00FFFF"
-    },
-    {
-      "id": "6",
-      "name": "Magenta",
-      "hex": "#FF00FF"
-    },
-    {
-      "id": "7",
+      "id": "17",
       "name": "Orange",
       "hex": "#FFA500"
     },
     {
-      "id": "8",
-      "name": "Purple",
-      "hex": "#800080"
+      "id": "2",
+      "name": "Mint Green",
+      "hex": "#98FB98"
     },
     {
-      "id": "9",
-      "name": "Pink",
-      "hex": "#FFC0CB"
+      "id": "3",
+      "name": "Baby Blue",
+      "hex": "#BDE0FE"
     },
     {
-      "id": "10",
-      "name": "Lime",
-      "hex": "#BFFF00"
+      "id": "4",
+      "name": "Peach Puff",
+      "hex": "#FFDAB9"
     },
     {
-      "id": "11",
+      "id": "21",
       "name": "Teal",
       "hex": "#008080"
     },
     {
-      "id": "12",
+      "id": "22",
       "name": "Brown",
       "hex": "#A52A2A"
     },
     {
+      "id": "5",
+      "name": "Light Coral",
+      "hex": "#F08080"
+    },
+    {
+      "id": "6",
+      "name": "Thistle",
+      "hex": "#D8BFD8"
+    },
+    {
+      "id": "8",
+      "name": "Sky Blue",
+      "hex": "#87CEEB"
+    },
+    {
+      "id": "9",
+      "name": "Light Pink",
+      "hex": "#FFB6C1"
+    },
+    {
+      "id": "10",
+      "name": "Orchid",
+      "hex": "#DA70D6"
+    },
+    {
+      "id": "11",
+      "name": "Red",
+      "hex": "#FF0000"
+    },
+    {
+      "id": "1",
+      "name": "Lavender",
+      "hex": "#E6E6FA"
+    },
+    {
+      "id": "12",
+      "name": "Green",
+      "hex": "#00FF00"
+    },
+    {
       "id": "13",
+      "name": "Blue",
+      "hex": "#0000FF"
+    },
+    {
+      "id": "14",
+      "name": "Yellow",
+      "hex": "#FFFF00"
+    },
+    {
+      "id": "15",
+      "name": "Cyan",
+      "hex": "#00FFFF"
+    },
+    {
+      "id": "16",
+      "name": "Magenta",
+      "hex": "#FF00FF"
+    },
+    {
+      "id": "20",
+      "name": "Lime",
+      "hex": "#BFFF00"
+    },
+    {
+      "id": "18",
+      "name": "Purple",
+      "hex": "#800080"
+    },
+    {
+      "id": "19",
+      "name": "Pink",
+      "hex": "#FFC0CB"
+    },
+    {
+      "id": "23",
       "name": "Black",
       "hex": "#000000"
     },
     {
-      "id": "15",
+      "id": "24",
       "name": "Gray",
       "hex": "#808080"
     },
     {
-      "id": "16",
+      "id": "25",
       "name": "Dark Blue",
       "hex": "#00008B"
     },
     {
-      "id": "17",
+      "id": "26",
       "name": "Light Blue",
       "hex": "#ADD8E6"
     },
     {
-      "id": "18",
+      "id": "27",
       "name": "Dark Green",
       "hex": "#006400"
     },
     {
-      "id": "19",
+      "id": "28",
       "name": "Light Green",
       "hex": "#90EE90"
     },
     {
-      "id": "20",
+      "id": "29",
       "name": "Maroon",
       "hex": "#800000"
     },
     {
-      "id": "21",
+      "id": "30",
       "name": "Navy",
       "hex": "#000080"
     },
     {
-      "id": "22",
+      "id": "31",
       "name": "Olive",
       "hex": "#808000"
     },
     {
-      "id": "23",
+      "id": "32",
       "name": "Silver",
       "hex": "#C0C0C0"
     },
     {
-      "id": "24",
+      "id": "33",
       "name": "Gold",
       "hex": "#FFD700"
     },
     {
-      "id": "25",
+      "id": "34",
       "name": "Coral",
       "hex": "#FF7F50"
     },
     {
-      "id": "26",
+      "id": "35",
       "name": "Turquoise",
       "hex": "#40E0D0"
     },
     {
-      "id": "27",
-      "name": "Violet",
-      "hex": "#EE82EE"
-    },
-    {
-      "id": "28",
+      "id": "36",
       "name": "Indigo",
       "hex": "#4B0082"
     },
     {
-      "id": "29",
+      "id": "37",
       "name": "Salmon",
       "hex": "#FA8072"
     },
     {
-      "id": "30",
+      "id": "38",
       "name": "Beige",
       "hex": "#F5F5DC"
-    },
-    {
-      "id": "4694",
-      "name": "jankiiiiiiii",
-      "hex": "#00FFFF"
     }
   ]
 }

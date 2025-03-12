@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-   width: 600px;
+   width: 700px;
    height: 600px;
    background: #1a1a1a;
    border-radius: 10px;
@@ -10,7 +10,7 @@ export const Container = styled.div`
    flex-direction: column;
    align-items: center;
    justify-content: space-between;
-   box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+   box-shadow: 0 0 40px rgba(255, 0, 255, 0.6);
 `;
 
 export const Title = styled.h2`
@@ -18,6 +18,7 @@ export const Title = styled.h2`
    font-size: 20px;
    text-transform: uppercase;
    margin-bottom: 10px;
+   text-shadow: 0 0 8px rgba(168, 85, 247, 0.8);
 `;
 
 export const SearchInput = styled.input`
@@ -90,11 +91,11 @@ export const ColorList = styled.div`
    overflow-y: auto;
    display: flex;
    flex-direction: column;
-   gap: 5px;
+   gap: 10px;
    padding: 10px;
-   border-radius: 5px;
+   /* border-radius: 5px; */
    background: #111;
-   box-shadow: inset 0 0 10px rgba(255, 0, 255, 0.3);
+   /* box-shadow: inset 0 0 20px rgba(255, 0, 255, 0.3); */
 
    &::-webkit-scrollbar {
       display: none;
