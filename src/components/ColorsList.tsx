@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { toast, ToastContainer } from "react-toastify";
 import { createColor, fetchColors, removeColor } from "../store/colors/colorsSlice";
 import { AppDispatch, RootState } from "../store/store";
+import { validateColor } from "../utils/validateColor";
 import {
    AddButton,
    ColorItem,
@@ -29,6 +31,7 @@ const ColorsList = () => {
       setRemovingId(id);
       setTimeout(() => {
          dispatch(removeColor(id));
+         toast.success(`The color is successfully deleted!`);
          setRemovingId("");
       }, 300);
    };
@@ -37,9 +40,11 @@ const ColorsList = () => {
       dispatch(fetchColors());
    }, [dispatch]);
 
-   const handleAddColor = () => {
-      if (name && hex) {
+   const onAddColor = async () => {
+      const isValid = await validateColor(name, hex);
+      if (isValid) {
          dispatch(createColor({ name, hex }));
+         toast.success(`The color ${name} is successfully added!`);
          setName("");
          setHex("");
       }
@@ -61,16 +66,19 @@ const ColorsList = () => {
                <Input placeholder="Color Name" value={name} onChange={(e) => setName(e.target.value)} />
                <Input placeholder="#Hex Value" value={hex} onChange={(e) => setHex(e.target.value)} />
             </InputRow>
-            <AddButton onClick={handleAddColor}>Add Color</AddButton>
+            <AddButton onClick={onAddColor} disabled={name == "" || hex == ""}>
+               Add Color
+            </AddButton>
             <ColorList>
                {filteredColors.map((color) => (
-                  <ColorItem key={color.id} style={{ background: color.hex }} isRemoving={removingId === color.id}>
+                  <ColorItem key={color.id} style={{ background: color.hex }} $isRemoving={removingId === color.id}>
                      {color.name}
                      <DeleteButton onClick={() => handleRemove(color.id)}>X</DeleteButton>
                   </ColorItem>
                ))}
             </ColorList>
          </Container>
+         <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
       </>
    );
 };

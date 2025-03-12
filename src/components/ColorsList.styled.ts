@@ -80,8 +80,14 @@ export const AddButton = styled.button`
    border-radius: 5px;
    cursor: pointer;
    transition: 0.3s;
+   
    &:hover {
       background: #c084fc;
+   }
+
+   &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
    }
 `;
 
@@ -113,7 +119,7 @@ export const ColorList = styled.div`
    scrollbar-width: none;
 `;
 
-export const ColorItem = styled.div<{ isRemoving: boolean }>`
+export const ColorItem = styled.div<{ $isRemoving: boolean }>`
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -126,8 +132,8 @@ export const ColorItem = styled.div<{ isRemoving: boolean }>`
 
    transition: all 0.3s ease-in-out;
 
-   ${({ isRemoving }) =>
-      isRemoving &&
+   ${({ $isRemoving }) =>
+      $isRemoving &&
       css`
          animation: ${fadeOut} 0.3s forwards;
       `}
