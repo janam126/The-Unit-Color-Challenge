@@ -9,8 +9,7 @@ To run the application locally, follow these steps:
 ### 1. Clone the Repository
 
 ```sh
-git clone <REPOSITORY_URL>
-cd <FOLDER_NAME>
+git clone https://github.com/janam126/The-Unit-Color-Challenge
 ```
 
 ### 2. Install Dependencies
@@ -34,7 +33,7 @@ This will start the backend on `http://localhost:5000`.
 In a separate terminal, start the frontend application:
 
 ```sh
-npm run dev
+npm start dev
 ```
 
 The application will run on `http://localhost:3000`.
@@ -46,7 +45,7 @@ In the project directory, you can run the following commands:
 - `npm run dev` – Starts the frontend application in development mode.
 - `npm run server` – Starts the JSON server.
 - `npm run build` – Builds the app for production.
-- `npm test` – Runs tests (if implemented).
+- `npm test` – Runs tests.
 
 ## Technologies Used
 
