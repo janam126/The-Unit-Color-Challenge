@@ -1,12 +1,12 @@
 import ColorsList from "../components/ColorsList";
+import { Wrapper } from "./Home.styled";
 
-const Home = () => {
+const HomePage = () => {
    return (
-      <div className="container mx-auto p-4">
-         <h1 className="text-3xl font-bold mb-4">Color Management</h1>
+      <Wrapper>
          <ColorsList />
-      </div>
+      </Wrapper>
    );
 };
 
-export default Home;
+export default HomePage;

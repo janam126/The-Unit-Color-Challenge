@@ -66,11 +66,6 @@
       "hex": "#000000"
     },
     {
-      "id": "14",
-      "name": "White",
-      "hex": "#FFFFFF"
-    },
-    {
       "id": "15",
       "name": "Gray",
       "hex": "#808080"
@@ -149,6 +144,11 @@
       "id": "30",
       "name": "Beige",
       "hex": "#F5F5DC"
+    },
+    {
+      "id": "4694",
+      "name": "jankiiiiiiii",
+      "hex": "#00FFFF"
     }
   ]
 }
