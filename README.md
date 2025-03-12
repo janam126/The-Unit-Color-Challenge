@@ -42,7 +42,7 @@ The application will run on `http://localhost:3000`.
 
 In the project directory, you can run the following commands:
 
-- `npm run dev` – Starts the frontend application in development mode.
+- `npm start dev` – Starts the frontend application in development mode.
 - `npm run server` – Starts the JSON server.
 - `npm run build` – Builds the app for production.
 - `npm test` – Runs tests.
@@ -53,3 +53,4 @@ In the project directory, you can run the following commands:
 - Styled Components (for styling)
 - JSON Server (for mock API)
 - Axios (for API requests)
+- Jest (testing)
