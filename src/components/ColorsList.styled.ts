@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 export const Container = styled.div`
    width: 700px;
@@ -85,6 +85,17 @@ export const AddButton = styled.button`
    }
 `;
 
+const fadeOut = keyframes`
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+`;
+
 export const ColorList = styled.div`
    width: 100%;
    height: 320px;
@@ -93,9 +104,7 @@ export const ColorList = styled.div`
    flex-direction: column;
    gap: 10px;
    padding: 10px;
-   /* border-radius: 5px; */
    background: #111;
-   /* box-shadow: inset 0 0 20px rgba(255, 0, 255, 0.3); */
 
    &::-webkit-scrollbar {
       display: none;
@@ -104,7 +113,7 @@ export const ColorList = styled.div`
    scrollbar-width: none;
 `;
 
-export const ColorItem = styled.div`
+export const ColorItem = styled.div<{ isRemoving: boolean }>`
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -116,6 +125,12 @@ export const ColorItem = styled.div`
    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 
    transition: all 0.3s ease-in-out;
+
+   ${({ isRemoving }) =>
+      isRemoving &&
+      css`
+         animation: ${fadeOut} 0.3s forwards;
+      `}
 
    &:hover {
       transform: scale(1.03);

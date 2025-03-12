@@ -23,6 +23,16 @@ const ColorsList = () => {
 
    const { colors } = useSelector((state: RootState) => state.colors);
 
+   const [removingId, setRemovingId] = useState("");
+
+   const handleRemove = (id: string) => {
+      setRemovingId(id);
+      setTimeout(() => {
+         dispatch(removeColor(id));
+         setRemovingId("");
+      }, 300);
+   };
+
    useEffect(() => {
       dispatch(fetchColors());
    }, [dispatch]);
@@ -54,9 +64,9 @@ const ColorsList = () => {
             <AddButton onClick={handleAddColor}>Add Color</AddButton>
             <ColorList>
                {filteredColors.map((color) => (
-                  <ColorItem key={color.id} style={{ background: color.hex }}>
+                  <ColorItem key={color.id} style={{ background: color.hex }} isRemoving={removingId === color.id}>
                      {color.name}
-                     <DeleteButton onClick={() => dispatch(removeColor(color.id))}>X</DeleteButton>
+                     <DeleteButton onClick={() => handleRemove(color.id)}>X</DeleteButton>
                   </ColorItem>
                ))}
             </ColorList>
